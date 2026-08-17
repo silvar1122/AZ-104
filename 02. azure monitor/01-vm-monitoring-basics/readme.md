@@ -12,3 +12,17 @@ I am buiding a VM and learning how Azure monitor monitors it.
 * **Guest OS monitoring**
 * **Basic alerts**
 * **Resource health**
+
+  ## Architecture
+                    Azure Monitor
+                       │
+          ┌────────────┼────────────┐
+          │            │            │
+       Metrics    Activity Log   Logs
+          │            │            │
+          └────────────┼────────────┘
+                       │
+                Log Analytics
+                  Workspace
+                       │
+                     VM
