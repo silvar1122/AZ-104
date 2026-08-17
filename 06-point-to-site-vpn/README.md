@@ -13,6 +13,8 @@ The lab was designed to help me understand how remote users can securely access 
 The lab consists of a remote Windows client connecting to an Azure Virtual Network through an Azure VPN Gateway.
 
 The VPN connection uses **OpenVPN** and **Microsoft Entra ID authentication**.
+<img width="959" height="509" alt="architecture" src="https://github.com/user-attachments/assets/5149be98-9be7-46d1-89e8-e30bb6d9ab0d" />
+
 
 ### Network design
 
