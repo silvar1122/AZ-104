@@ -2,7 +2,7 @@
 ## Overview
 I am buiding a VM and learning how Azure monitor monitors it.
 
-##Skills 
+# Skills 
 -Azure Monitor
 -Metrics
 -Activity Log
