@@ -18,10 +18,11 @@ The company wants you to:
 
 * **Monitor VM performance.**
 * Investigate administrative activities.
+* Centralize monitoring data.
+* Determine whether the VM is reporting monitoring data.
+* Understand the different monitoring signals available in Azure.
 
-Centralize monitoring data.
-Determine whether the VM is reporting monitoring data.
-Understand the different monitoring signals available in Azure.
+
   ## Architecture
                     Azure Monitor
                        │
