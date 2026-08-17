@@ -23,7 +23,7 @@ The company wants you to:
 * Understand the different monitoring signals available in Azure.
 
 
-  ## Architecture
+## Architecture
                     Azure Monitor
                        │
           ┌────────────┼────────────┐
