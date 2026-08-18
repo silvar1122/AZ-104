@@ -45,3 +45,6 @@ Based on the shared screens shot our virtual machine
 *  The VM sent a total of 1.3Mib network data to another destination over the past 30 min
 *  About 13.14GB of RAM is available for usage
 *  The VM has been currently using 10.25% of its available CPU
+
+## Activity Logs
+Activity Log records subscription-level management operations performed on Azure resources.
