@@ -48,3 +48,39 @@ Based on the shared screens shot our virtual machine
 
 ## Activity Logs
 Activity Log records subscription-level management operations performed on Azure resources.
+
+## Log analytics Workspace 
+Azure Virtual Machine
+        │
+        ▼
+Azure Monitor Agent (AMA)
+        │
+        ▼
+Data Collection Rule (DCR)
+        │
+        ▼
+Log Analytics Workspace
+        │
+        ▼
+KQL Queries
+        │
+        ▼
+Analysis / Alerts / Dashboards
+
+
+In the screenshot i was querying the heartbeat table
+VM
+ │
+ │  "I'm still here" ❤️
+ │
+ ▼
+Azure Monitor Agent
+ │
+ ▼
+Log Analytics Workspace
+ │
+ ▼
+Heartbeat table
+
+* Heartbeat measures VM connectivity to the azure monitor agent.
+  The query showed the last time the VM checked in with the azure monitor.
