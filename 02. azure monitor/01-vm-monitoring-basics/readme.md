@@ -59,10 +59,12 @@ flowchart TD
     D --> E[KQL Queries]
     E --> F[Analysis, Alerts, and Dashboards]
 ```
+```mermaid
 flowchart TD
     A[Azure Virtual Machine] -->|Heartbeat signal| B[Azure Monitor Agent]
     B --> C[Log Analytics Workspace]
     C --> D[Heartbeat Table]
+```
 
 * Heartbeat measures VM connectivity to the azure monitor agent.
   The query showed the last time the VM checked in with the azure monitor.
