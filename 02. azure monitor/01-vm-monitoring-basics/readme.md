@@ -67,4 +67,4 @@ flowchart TD
 ```
 
 * Heartbeat measures VM connectivity to the azure monitor agent.
-  The query showed the last time the VM checked in with the azure monitor.
+  The query in the screenshot showed the last time the VM checked in with the azure monitor.
