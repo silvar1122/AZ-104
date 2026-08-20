@@ -8,7 +8,7 @@ This repository contains hands-on Azure labs completed while preparing for the M
 | 03  | VNet & Subnets    | ✅ Completed    |
 | 04  | VNet Peering      | ✅ Completed    |
 | 05  | NSG               | ✅ Completed    |
-| 06  | Azure Monitor     | 🔄 In progress |
-| 07  | Point-to-Site VPN | 🔄 In progress |
+| 06  | Azure Monitor     | ✅ Completed   |
+| 07  | Point-to-Site VPN | ✅ Completed   |
 | 08  | Azure Backup      | ⬜ Planned      |
 
