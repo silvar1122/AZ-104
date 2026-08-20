@@ -50,37 +50,20 @@ Based on the shared screens shot our virtual machine
 Activity Log records subscription-level management operations performed on Azure resources.
 
 ## Log analytics Workspace 
-Azure Virtual Machine
-        │
-        ▼
-Azure Monitor Agent (AMA)
-        │
-        ▼
-Data Collection Rule (DCR)
-        │
-        ▼
-Log Analytics Workspace
-        │
-        ▼
-KQL Queries
-        │
-        ▼
-Analysis / Alerts / Dashboards
-
+```mermaid
+flowchart TD
+    A[Azure Virtual Machine] --> B[Azure Monitor Agent<br/>AMA]
+    B --> C[Data Collection Rule<br/>DCR]
+    C --> D[Log Analytics Workspace]
+    D --> E[KQL Queries]
+    E --> F[Analysis / Alerts / Dashboards]
 
 In the screenshot i was querying the heartbeat table
-VM
- │
- │  "I'm still here" ❤️
- │
- ▼
-Azure Monitor Agent
- │
- ▼
-Log Analytics Workspace
- │
- ▼
-Heartbeat table
+```mermaid
+flowchart TD
+    A[Azure Virtual Machine] -->|Heartbeat signal| B[Azure Monitor Agent]
+    B --> C[Log Analytics Workspace]
+    C --> D[Heartbeat Table]
 
 * Heartbeat measures VM connectivity to the azure monitor agent.
   The query showed the last time the VM checked in with the azure monitor.
