@@ -50,16 +50,15 @@ Based on the shared screens shot our virtual machine
 Activity Log records subscription-level management operations performed on Azure resources.
 
 ## Log analytics Workspace 
+
 ```mermaid
 flowchart TD
-    A[Azure Virtual Machine] --> B[Azure Monitor Agent<br/>AMA]
-    B --> C[Data Collection Rule<br/>DCR]
+    A[Azure Virtual Machine] --> B[Azure Monitor Agent]
+    B --> C[Data Collection Rule]
     C --> D[Log Analytics Workspace]
     D --> E[KQL Queries]
-    E --> F[Analysis / Alerts / Dashboards]
-
-In the screenshot i was querying the heartbeat table
-```mermaid
+    E --> F[Analysis, Alerts, and Dashboards]
+```
 flowchart TD
     A[Azure Virtual Machine] -->|Heartbeat signal| B[Azure Monitor Agent]
     B --> C[Log Analytics Workspace]
