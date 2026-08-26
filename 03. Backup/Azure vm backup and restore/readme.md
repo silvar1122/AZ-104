@@ -11,14 +11,14 @@ The VM currently has no backup configured.
 If important files are accidentally deleted or the VM becomes corrupted, there is no recovery point available.
 
 ## Action
-**Step 1 — Create the Virtual Machine**
-**Step 2 — Create a Recovery Services Vault**
-**Step 3 — Configure VM Backup**
-**Step 4 — Create an On-Demand Backup**
-**Step 5 — Verify the Recovery Point**
-**Step 6 — Simulate Data Loss**
-**Step 7 — Restore the VM**
-**Step 8 — Verify the Restore**
+* **Step 1 — Create the Virtual Machine**
+* **Step 2 — Create a Recovery Services Vault**
+* **Step 3 — Configure VM Backup**
+* **Step 4 — Create an On-Demand Backup**
+* **Step 5 — Verify the Recovery Point**
+* **Step 6 — Simulate Data Loss**
+* **Step 7 — Restore the VM**
+* **Step 8 — Verify the Restore**
 
 ## Result
 
