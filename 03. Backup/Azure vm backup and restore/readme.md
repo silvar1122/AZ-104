@@ -11,3 +11,4 @@ The VM currently has no backup configured.
 If important files are accidentally deleted or the VM becomes corrupted, there is no recovery point available.
 
 ## Action
+Step 1 — Create the Virtual Machine
