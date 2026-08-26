@@ -9,3 +9,5 @@ The company wants to protect the VM against accidental deletion or data loss. Yo
 **Obstacle**
 The VM currently has no backup configured.
 If important files are accidentally deleted or the VM becomes corrupted, there is no recovery point available.
+
+## Action
