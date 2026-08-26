@@ -19,3 +19,9 @@ If important files are accidentally deleted or the VM becomes corrupted, there i
 **Step 6 — Simulate Data Loss**
 **Step 7 — Restore the VM**
 **Step 8 — Verify the Restore**
+
+## Result
+
+The Azure VM was successfully protected using Azure Backup.
+A Recovery Services vault was created, a backup policy was applied, and an on-demand recovery point was created.
+After simulating accidental data loss, the VM was successfully restored from the recovery point and the deleted file was recovered.
