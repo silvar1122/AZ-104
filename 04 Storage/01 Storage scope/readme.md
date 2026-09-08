@@ -5,10 +5,10 @@ In this lab, a security engineer is responsible for protecting sensitive data st
 
 The engineer will:
 
-**Create an Azure Storage account.**
-**Create an encryption scope within the storage account.**
-Configure the encryption scope to use a defined encryption boundary.
-Create a Blob Storage container associated with the encryption scope.
-Upload a test blob into the protected container.
-Verify that the container and blob are using the intended encryption scope.
-Document the configuration and security design for audit and portfolio purposes
+* **Create an Azure Storage account.**
+* **Create an encryption scope within the storage account.**
+* **Configure the encryption scope to use a defined encryption boundary.**
+* **Create a Blob Storage container associated with the encryption scope.**
+* **Upload a test blob into the protected container.**
+* **Verify that the container and blob are using the intended encryption scope.**
+* **Document the configuration and security design for audit and portfolio purposes**
