@@ -41,8 +41,8 @@ The configuration was changed to allow access from selected networks, with my cu
 ## Security Lesson Learned ##
 
 This troubleshooting experience demonstrated that Azure Storage security is based on multiple layers of controls.
-* **Network/ Firewall control **
-*  **Authentication **
-*   **Authorization**
+* Network/ Firewall control 
+* Authentication 
+* Authorization
 
        
