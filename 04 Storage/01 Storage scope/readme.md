@@ -12,3 +12,10 @@ The engineer will:
 * **Upload a test blob into the protected container.**
 * **Verify that the container and blob are using the intended encryption scope.**
 * **Document the configuration and security design for audit and portfolio purposes**
+
+
+## Security Objective ##
+
+The primary objective is to demonstrate data-at-rest protection with a dedicated encryption scope while maintaining a single Azure Storage account.
+
+This provides a practical example of how a cloud security engineer can implement defense-in-depth, encryption isolation, and controlled data protection within Azure Blob Storage.
