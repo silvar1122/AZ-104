@@ -42,19 +42,25 @@ The configuration was changed to allow access from selected networks, with my cu
 
 This troubleshooting experience demonstrated that Azure Storage security is based on multiple layers of controls.
 
-                Azure Storage Security
-                        │
-        ┌───────────────┼────────────────┐
-        ▼               ▼                ▼
-   Network Access   Authentication   Authorization
-        │               │                │
- Public IP / VNet    Identity        RBAC / SAS
-        │
-        ▼
-   Storage Firewall
-        │
-        ▼
-   Encryption
-        │
-        ▼
- Encryption Scope
+                    Azure Storage Security
+                           │
+          ┌────────────────┼────────────────┐
+          ▼                ▼                ▼
+   Network Access     Authentication    Authorization
+          │                │                │
+   Public IP/VNet      Entra ID          Azure RBAC
+   Firewall            Managed Identity  Blob Permissions
+   Private Endpoint    SAS               SAS
+          │                │                │
+          └────────────────┼────────────────┘
+                           ▼
+                    Storage Account
+                           │
+                           ▼
+              Service-Side Encryption
+                           │
+                           ▼
+                   Encryption Scope
+                           │
+                           ▼
+                   Protected Blob Data
