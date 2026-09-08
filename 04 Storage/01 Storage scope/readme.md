@@ -19,3 +19,42 @@ The engineer will:
 The primary objective is to demonstrate data-at-rest protection with a dedicated encryption scope while maintaining a single Azure Storage account.
 
 This provides a practical example of how a cloud security engineer can implement defense-in-depth, encryption isolation, and controlled data protection within Azure Blob Storage.
+
+## Security Challenge & Resolution ##
+## Challenge: Storage Account Network Access Restriction ##
+
+During the lab, I encountered an access issue when attempting to open and access the Blob Storage container through the Azure Portal.
+
+The Storage Account was configured with restricted network access rather than allowing access from all public networks. As a result, my client connection was not permitted to access the storage data, even though I had successfully created the storage account, container, and encryption scope.
+
+This demonstrated an important distinction between authentication/authorization and network access control:
+
+Having permission to access the Storage Account does not automatically mean the network connection is allowed.
+Azure Storage evaluates network restrictions before allowing access to the storage data.
+The Storage Account firewall can restrict access to selected virtual networks or public IP addresses.
+Resolution
+
+I identified the public IP address of my current network and added it to the Storage Account's Networking → Firewalls and virtual networks → Public network access configuration.
+
+The configuration was changed to allow access from selected networks, with my current public IP address added as an allowed network.
+
+## Security Lesson Learned ##
+
+This troubleshooting experience demonstrated that Azure Storage security is based on multiple layers of controls.
+
+                Azure Storage Security
+                        │
+        ┌───────────────┼────────────────┐
+        ▼               ▼                ▼
+   Network Access   Authentication   Authorization
+        │               │                │
+ Public IP / VNet    Identity        RBAC / SAS
+        │
+        ▼
+   Storage Firewall
+        │
+        ▼
+   Encryption
+        │
+        ▼
+ Encryption Scope
