@@ -37,3 +37,6 @@ In this lab, I will:
 * **Apply the CMK-backed encryption scope to the container.**
 * **Upload a test blob.**
 * **Verify that the configuration is working correctly.**
+
+## Required roles and permissions ##
+
