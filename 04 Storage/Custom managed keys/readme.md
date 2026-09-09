@@ -11,7 +11,7 @@ To achieve this, I implemented a customer-managed key (CMK) solution using Azure
 The company has two categories of data:
 
 Azure Storage Account
-* **General Data**
+* **General Data** *
       * Standard Azure Storage encryption
 * **Sensitive Data**
       * Customer-managed encryption scope
