@@ -39,4 +39,7 @@ In this lab, I will:
 * **Verify that the configuration is working correctly.**
 
 ## Required roles and permissions ##
+In order for user to create keys in key vault user need the CRYPTO SERVICE OFFICER added to user list of roles
+
+In order for the storage account managed identity to use customer managed key in key vault you need to add KEY VAULT CRYPTO SERVICE ENCRYPTION USER to the storage account
 
