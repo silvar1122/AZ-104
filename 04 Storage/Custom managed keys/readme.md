@@ -11,13 +11,11 @@ To achieve this, I implemented a customer-managed key (CMK) solution using Azure
 The company has two categories of data:
 
 Azure Storage Account
-│
-├── General Data
-│     └── Standard Azure Storage encryption
-│
-└── Sensitive Data
-      └── Customer-managed encryption scope
-            └── Azure Key Vault RSA key
+* **General Data**
+      * Standard Azure Storage encryption
+* **Sensitive Data**
+      * Customer-managed encryption scope
+            * Azure Key Vault RSA key
 
 Sensitive data must be protected using a customer-managed RSA key stored in Azure Key Vault.
 
