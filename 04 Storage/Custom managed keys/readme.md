@@ -20,3 +20,20 @@ Azure Storage Account
 Sensitive data must be protected using a customer-managed RSA key stored in Azure Key Vault.
 
 The solution must also follow the principle of least privilege, meaning the Storage Account should only receive the permissions it requires to use the encryption key.
+
+
+## Objectives ##
+
+In this lab, I will:
+
+Create an Azure Key Vault.
+Enable purge protection on the Key Vault.
+Create a customer-managed RSA key.
+Enable a system-assigned managed identity on the Storage Account.
+Grant the Storage Account identity the minimum required Key Vault permissions.
+Create a customer-managed encryption scope in Azure Storage.
+Associate the Key Vault RSA key with the encryption scope.
+Create a dedicated Blob container for sensitive data.
+Apply the CMK-backed encryption scope to the container.
+Upload a test blob.
+Verify that the configuration is working correctly.
