@@ -22,7 +22,7 @@ Sensitive data must be protected using a customer-managed RSA key stored in Azur
 The solution must also follow the principle of least privilege, meaning the Storage Account should only receive the permissions it requires to use the encryption key.
 
 
-## Objectives ##
+## Procedures ##
 
 In this lab, I will:
 
